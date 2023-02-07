@@ -1,5 +1,6 @@
-.App {
+/* .App {
   text-align: center;
+  background: red;
 }
 
 .App-logo {
@@ -34,5 +35,35 @@
   }
   to {
     transform: rotate(360deg);
+  }
+} */
+.app {
+  display: flex;
+  /* gap: 30px; */
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+  background: rgb(95, 167, 190);
+}
+.tweet {
+  height: 300px;
+  width: 300px;
+  background: black;
+  color: white;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.red{
+  color: #2044FF;
+}
+@media (max-width: 720px) {
+  .app{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
   }
 }
